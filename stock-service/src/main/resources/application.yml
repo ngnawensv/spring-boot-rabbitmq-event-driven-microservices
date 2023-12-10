@@ -1,0 +1,7 @@
+server:
+  port: 8081
+
+spring:
+    queue:
+      order:
+        name: order_queue

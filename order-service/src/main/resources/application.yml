@@ -1,0 +1,25 @@
+Server:
+  port: 8080
+
+#Connexion to rabbitmq server
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+    queue:
+      order:
+        name: order_queue
+      email:
+        name: email_queue
+
+    exchange:
+      name: order_exchange
+
+    routing:
+      order:
+        key: order_routing_key
+      email:
+        key: email_routing_key
