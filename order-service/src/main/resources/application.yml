@@ -1,6 +1,5 @@
 Server:
   port: 8080
-
 #Connexion to rabbitmq server
 spring:
   rabbitmq:
